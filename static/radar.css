@@ -1,0 +1,135 @@
+@-webkit-keyframes gm-rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        color: #a4abc7;
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        color: #262466;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+        color: #a4abc7;
+    }
+}
+
+@keyframes rotating {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        color: #a4abc7;
+
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+        color: #262466;
+
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+        color: #a4abc7;
+
+    }
+}
+
+.gm-rotating {
+
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+
+}
+
+.gm-loader {
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+
+.gm-cartouche {
+
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #a4abc7;
+    border: 1px solid #262466;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #262466;
+}
+
+.gm-message {
+    font-family: Roboto, "Helvetica Neue", Ubuntu, sans-serif;
+    color: inherit;
+    font-size: 1em;
+    align-items: center;
+    display: flex;
+}
+
+.gm-container {
+    position: relative;
+}
+
+.gm-success-real {
+    color: #669c66;
+    border-color: #8ED68E;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #d7ffd5;
+}
+
+.gm-success-ai {
+    color: #ffb41e;
+    border-color: #ffb41e;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fff9e2;
+}
+
+.gm-fail {
+    color: #DF1717;
+    border-color: #DF1717;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #ffd1ce;
+}
+
+.gm-svg {
+    color: inherit;
+}
+
+.gm-message-label {
+    display: inline;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.gm-message-score {
+    display: inline;
+    text-align: center;
+    margin: 0;
+    font-family: monospace;
+}

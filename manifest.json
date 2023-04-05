@@ -1,0 +1,41 @@
+{
+  "name": "Sonar Guardian",
+  "version": "0.0.2",
+  "description": "Detect artificially generated to help you fight fake news. Disclaimer: classification can contain false negative.",
+  "permissions": [
+    "contextMenus",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service_worker.min.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "content_script.min.js"
+      ],
+      "css": [
+        "static/radar.css"
+      ],
+      "all_frames": false,
+      "run_at": "document_start"
+    }
+  ],
+  "homepage_url": "https://github.com/moutard",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  },
+  "manifest_version": 3,
+  "icons": {
+    "16": "icons/radar-70.png",
+    "48": "icons/radar-211.png",
+    "128": "icons/radar-700.png"
+  }
+}
